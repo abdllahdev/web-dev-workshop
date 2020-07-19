@@ -1,0 +1,15 @@
+#content {
+    text-align: center;
+    background-color: black;
+    margin-top: 250px;
+    margin-left: 400px;
+    width: 500px;
+}
+
+#header {
+    color: red;
+}
+
+.about_lily {
+    color: green;
+}
