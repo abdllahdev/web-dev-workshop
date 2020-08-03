@@ -2,33 +2,33 @@
 <html lang="en">
 
 <head>
-    <title>Lily's website</title>
+    <title>Abdullah's Website</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <nav>
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+        <ul class="nav mb-5">
+            <li class="nav-item mt-3">
+                <a class="nav-link" href="../index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mt-3">
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
 
     <div class="container-fluid">
-        <h3 class="header text-center">Welcome to my website</h3>
+        <h3 class="mb-5 text-center">Welcome to my website</h3>
         <div class="row">
             <div class="col-md-4">
                 <div class="text-center">
-                    <img src="pics/lily.jpg" class="rounded mb-3" alt="Lily Smith">
-                    <p class="name">Lily Smith</p>
+                    <img src="../pics/abdullah.jpg" class="rounded-circle mb-3 avatar" alt="Abdullah Elsayed">
+                    <p class="name">Abdullah Elsayed</p>
                     <span class="social-media">
                         <a href="#" target="_blank" class="text-body">
                             <i class="fab fa-facebook"></i>
@@ -44,7 +44,7 @@
                         </a>
                     </span>
                     <p class="mt-2">
-                        Hello, I'm Lily. I'm a Computer Science student at UoB. I love programming with JavaScript.
+                        Hello, I'm Abdullah. I'm a Computer Science student at UoB. I love programming with JavaScript.
                     </p>
                 </div>
             </div>
@@ -52,16 +52,16 @@
                 <h4>Contact me</h4>
                 <form>
                     <div class="form-group">
-                        <label>Email address</label>
+                        <label for="email">Email address</label>
                         <input id="email" type="email" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label>Full Name</label>
+                        <label for="name">Full Name</label>
                         <input id="name" type="text" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label>Message</label>
-                        <textarea id="message" class="form-control" rows="3"></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="4"></textarea>
                     </div>
                     <button id="send" type="submit" class="btn btn-primary">SEND</button>
                 </form>
@@ -79,11 +79,16 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $("#send").on("click", function () {
+                var email = $("#email").val();
                 var name = $("#name").val();
-                alert("Thanks, " + name);
+                var message = $("#message").val();
+
+                alert("Thanks, " + name + " | " + "Your email: " + email + " | " + "Your message: " +
+                    message);
             })
         })
     </script>

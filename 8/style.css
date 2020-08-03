@@ -1,24 +1,11 @@
-nav {
-    margin-bottom: 50px;
-}
-
 .nav {
     background-color: black;
     height: 75px;
 }
 
-.nav-item {
-    margin-left: 15px;
-    margin-top: 17px;
-}
-
 .nav-link {
     color: white;
     text-decoration: none;
-}
-
-.header {
-    margin-bottom: 40px;
 }
 
 .name {
@@ -29,5 +16,9 @@ nav {
 .social-media a {
     font-size: 20px;
     text-decoration: none;
-    margin-left: 10px;
+}
+
+.avatar {
+    height: 250px;
+    width: 250px;
 }
